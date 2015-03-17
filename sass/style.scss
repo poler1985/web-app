@@ -1,0 +1,68 @@
+/*
+   Compiling this file:
+
+   1. Launch The Terminal.
+   2. Navigate to the “web-app” folder, which is the parent folder of the “sass” folder, which, in turn, is the parent of this document.
+   3. Copy the following command, including backslashes, and paste it into your terminal.
+
+sass \
+--unix-newlines \
+--style expanded \
+--watch sass/style.scss:css/style.css
+
+   To stop Sass, type the key sequence “cntrl + C”.
+
+   IMPORTANT NOTE: Any CSS-related edits must be carried out via Sass; DO NOT edit the CSS document.
+*/
+@import url( "http://fonts.googleapis.com/css?family=Titillium+Web:400,700&amp;subset=latin,latin-ext" );
+
+$color-primary: rgb(239,49,37);
+$font-sans: "Titillium Web", sans-serif;
+
+body {
+   color: $color-primary;
+   font: 1em $font-sans;
+   width: 575px;
+   margin: 0 auto;
+}
+
+p {
+   text-align: center;
+}
+
+header {
+   margin: 25px auto;
+   width: 498px;
+   padding: 20px 0;
+   border: 1px solid $color-primary;
+   text-align: center;
+
+   p {
+      font-size: 1.3em;
+   }
+}
+
+h1 {
+   text-align: center;
+}
+
+form {
+   width: 460px;
+   margin: 25px auto;
+   padding: 10px 20px;
+   color: white;
+   background: $color-primary;
+}
+
+input, textarea {
+   font-family: $font-sans;
+}
+
+input {
+   padding: 20px 10px;
+   border: 1px solid transparent;
+}
+
+.fa {
+   text-decoration: none;
+}
